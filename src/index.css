@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-navbar {
+  backdrop-saturate: unset !important;
+  backdrop-blur: unset !important;
+  background-opacity: unset !important;
+  border: none !important;
+}
+.page-container[data-darkmode="true"] {
+  background-color: black;
+  color: white;
+}
+
+.page-container[data-darkmode="false"] {
+  background-color: white;
+  color: black;
+}
+
+/* Specific components */
+.page-container[data-darkmode="true"] .btn-button {
+  color: white;
+  background-color: darkblue;
+}
+
+.page-container[data-darkmode="false"] .btn-button {
+  color: black;
+  background-color: lightblue;
+}

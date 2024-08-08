@@ -6,7 +6,13 @@ module.exports = withMT({
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'background' : "#E0E1DD",
+        'background1' : "#D9D9D9",
+        
+      },
+    },
   },
   plugins: [],
 });

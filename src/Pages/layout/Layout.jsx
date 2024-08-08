@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Header, Footer } from "../compiler";
 
 export const Layout = () => {
+  const [darkMode, setdarkMode] = useState(false);
   return (
     <>
-      <Header/>
+      <div className="page-container" data-darkmode={darkMode?"true":"false"}>
+      <Header darkMode={darkMode} setdarkMode={setdarkMode}/>
 
-        <Outlet/>
+        <Outlet />
       
       <Footer />
+      </div>
     </>
   );
 };

@@ -11,7 +11,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function NavItem({ label }) {
   return (
     <a href="#">
-      <Typography as="li" color="blue-gray" className="p-1 font-medium">
+      <Typography as="li" color="blue-gray" className="p-1 font-bold">
         {label}
       </Typography>
     </a>
@@ -20,16 +20,15 @@ function NavItem({ label }) {
 
 function NavList() {
   return (
-    <ul className="mb-4 mt-2 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-8 ">
-      <NavItem label="Home" className="font-semibold"/>
+    <ul className="mb-4 mt-2 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
+      <NavItem label="Home" />
       <NavItem label="About Me" />
       <NavItem label="Projects" />
-      <NavItem label="Contact Us" />
     </ul>
   );
 }
 
-export function Header() {
+export function Header({ darkMode, setdarkMode }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen((cur) => !cur);
 
@@ -41,23 +40,25 @@ export function Header() {
   }, []);
 
   return (
-    <Navbar color="transparent" fullWidth>
+    <Navbar className=" shadow-none custom-navbar sticky top-0 right-0" fullWidth>
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-
         <Typography
           as="a"
-          href="#"
+          href="#"  
           color="blue-gray"
           className="mr-4 cursor-pointer text-lg font-bold flex flex-row"
         >
           <img src="" alt="Logo" />
           Aldrin John Almoradie
         </Typography>
-        <div className="hidden lg:block">
+        <div className="hidden lg:block me-1">
           <NavList />
         </div>
         <Button color="gray" className="hidden lg:inline-block">
-          Sign in
+          Contact Me
+        </Button>
+        <Button onClick={() => setdarkMode(!darkMode)}  color="gray" className="hidden lg:inline-block">
+          Click Me
         </Button>
         <IconButton
           size="sm"
@@ -77,7 +78,7 @@ export function Header() {
         <div className="mt-2 rounded-xl bg-white py-2">
           <NavList />
           <Button className="mb-2" fullWidth>
-            Sign in
+            Contact Me
           </Button>
         </div>
       </Collapse>
