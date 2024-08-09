@@ -40,7 +40,7 @@ export function Header({ darkMode, setdarkMode }) {
   }, []);
 
   return (
-    <Navbar className=" shadow-none custom-navbar sticky top-0 right-0" fullWidth>
+    <Navbar className=" shadow-none custom-navbar sticky top-0 right-0 z-10" fullWidth>
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -54,11 +54,11 @@ export function Header({ darkMode, setdarkMode }) {
         <div className="hidden lg:block me-1">
           <NavList />
         </div>
+        <Button onClick={() => setdarkMode(!darkMode)}  color="gray" className="ms-9">
+          Click Me
+        </Button>
         <Button color="gray" className="hidden lg:inline-block">
           Contact Me
-        </Button>
-        <Button onClick={() => setdarkMode(!darkMode)}  color="gray" className="hidden lg:inline-block">
-          Click Me
         </Button>
         <IconButton
           size="sm"
