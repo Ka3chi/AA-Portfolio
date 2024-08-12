@@ -18,7 +18,6 @@
   color: black;
 }
 
-/* Specific components */
 .page-container[data-darkmode="true"] .btn-button {
   color: white;
   background-color: darkblue;
