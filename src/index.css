@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+p{
+  font-size: 20px;
+  font-weight: thin;
+  text-wrap: center;
+}
 .custom-navbar {
   backdrop-saturate: unset !important;
   backdrop-blur: unset !important;
