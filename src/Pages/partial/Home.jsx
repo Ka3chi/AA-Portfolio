@@ -69,15 +69,17 @@ export const Home = () => {
       <section className="flex justify-center items-center p-0 m-0 w-full">
         <div className="flex flex-col justify-center items-center h-[800px] w-full">
           <div className="flex flex-col justify-center items-center bg-background1 h-[600px] w-[900px] rounded-lg">
-            <div className="bg-blue-500 w-[45px] h-[45px] absolute top-[1975px] right-[640px]"></div>
+            <div className="bg-blue-500 w-[35px] h-[35px] absolute top-[1825px] right-[700px]"></div>
             <div className="font-semibold text-[35px] flex justify-center z-0 ">Experience</div>
             <div className="flex flex-col justify-center items-center ">
               <span className="bg-gray-100 w-[300px] h-[40px] flex justify-center items-center font-semibold text-[20px] rounded-lg px-1">Web App Developer Intern</span>
-              <p className="space-y-5">
+              <span className="flex justify-center items-center">
+              <p className="space-y-5 items-center flex justify-center">
                 Bicol One Broadband Services Inc. <br />
                 Taytay Rizal <br />
                 Jan 22 2024 - April 13 2024
               </p>
+              </span>
               <br />   
               <span className="bg-gray-100 w-[300px] h-[40px] flex justify-center items-center font-semibold text-[20px] rounded-lg px-1">
               Duties and Responsibilities:
