@@ -55,7 +55,7 @@ export const Home = () => {
         <div className="flex justify-center items-center h-[800px] w-full bg-background1">
           <div className="flex flex-col justify-center items-center bg-white h-[500px] w-[900px] rounded-lg">
             <div className="flex justify-center items-center">
-              <div className="bg-blue-500 w-[45px] h-[45px] absolute top-[1175px] right-[640px]"></div>
+              <div className="bg-blue-500 w-[45px] h-[45px] static top-[1175px] right-[640px]"></div>
               <p className="font-semibold text-[35px] flex justify-center z-0 ">About Me</p>
             </div>
             <div className="flex justify-center items-center w-[800px]">
@@ -66,32 +66,33 @@ export const Home = () => {
         {/* //Experience and Education */}
       </section>
       {/* experience&education */}
-      <section className="flex justify-center items-center p-0 m-0 w-full">
-        <div className="flex flex-col justify-center items-center h-[800px] w-full">
-          <div className="flex flex-col justify-center items-center bg-background1 h-[600px] w-[900px] rounded-lg">
-            <div className="bg-blue-500 w-[35px] h-[35px] absolute top-[1825px] right-[700px]"></div>
-            <div className="font-semibold text-[35px] flex justify-center z-0 ">Experience</div>
-            <div className="flex flex-col justify-center items-center ">
-              <span className="bg-gray-100 w-[300px] h-[40px] flex justify-center items-center font-semibold text-[20px] rounded-lg px-1">Web App Developer Intern</span>
-              <span className="flex justify-center items-center">
-              <p className="space-y-5 items-center flex justify-center">
+      <section className="grid justify-center items-center p-0 m-0 w-full">
+        <div className="grid grid-col justify-center items-center h-[800px] w-full">
+          <div className=" relative flex flex-col justify-center bg-background1 h-[600px] w-[900px] rounded-lg">
+            <div className="bg-blue-500 w-[30px] h-[25px] absolute top-[15px] left-[355px] rounded-md"></div>
+            <span className="font-semibold text-[35px] flex justify-center z-0 ">Experience</span>
+            <div className="flex flex-col justify-center items-center space-y-5">
+              <div className="bg-gray-100 w-[300px] h-[40px] flex justify-center items-center font-semibold text-[20px] rounded-lg px-1">Web App Developer Intern
+              </div>
+              <p className="space-y- text-wrap">
                 Bicol One Broadband Services Inc. <br />
                 Taytay Rizal <br />
-                Jan 22 2024 - April 13 2024
-              </p>
-              </span>
-              <br />   
+                Jan 22 2024 - April 13 2024 <br />
+              </p>    
               <span className="bg-gray-100 w-[300px] h-[40px] flex justify-center items-center font-semibold text-[20px] rounded-lg px-1">
               Duties and Responsibilities:
               </span>
-              <p>
-                Design and Development <br />
-                Code and Debugging <br />
-                QA Tester <br />
-                User Management <br />
+              <div className="flex justify-center items-center text-wrap text-left">
+              <p className="space-y-5">
+              Designed, developed, and maintained responsive websites.<br />
+              Created user-friendly interfaces with a focus on accessibility <br />
+              Implemented server-side logic and database connections. <br />
+              Developed dashboards and managed user authentication systems. <br />
+              Tested, debugged, and optimized code for performance and reliability. <br />
               </p>
+              </div>
             </div>
-            <div className="bg-blue-500 w-[45px] h-[45px] absolute top-[2075px] right-[640px]"></div>
+            <div className="bg-blue-500 w-[45px] h-[45px] relative top-[100px] left-[640px]"></div>
             <div className="font-bold text-[35px] flex justify-center z-0  ">Education</div>
             <div className="flex flex-col justify-center items-center">
               <p>
@@ -105,7 +106,15 @@ export const Home = () => {
       </section>
       {/* //Projects */}
       <section className="flex justify-center items-center p-0 m-0 w-full bg-light-blue-300">
-        <div className="flex justify-center items-center h-[800px] w-full">Projects</div>
+        <div className="flex justify-center items-center h-[800px] w-full">
+        <div class="relative flex place-items-center w-full max-w-lg h-64 bg-white">
+  
+    <div class="absolute inset-100 bg-gray-500 w-[500px] h-[50px] z-20"></div>
+   
+    <div class="absolute inset-1 bg-yellow-500 z-10" ></div>
+  </div>
+          
+        </div>
       </section>
       {/* //Contact Me */}
       <section className="flex justify-center items-center p-0 m-0 w-full">

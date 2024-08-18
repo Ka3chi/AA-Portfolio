@@ -10,7 +10,7 @@ export function Contactme() {
     AOS.init();
   }, []);
   return (
-    <section id="contactus" data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="px-8 py-8 lg:py-16">
+    <section id="contactus" data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="px-8 py-8 lg:py-16 overflow-y-hidden">
       <div className="container mx-auto text-center">
         <Typography
           variant="h1"

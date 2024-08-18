@@ -6,7 +6,7 @@ export const Layout = () => {
   const [darkMode, setdarkMode] = useState(false);
   return (
     <>
-      <div className="page-container" data-darkmode={darkMode?"true":"false"}>
+      <div className="page-container overflow-y-hidden" data-darkmode={darkMode?"true":"false"} >
       <Header darkMode={darkMode} setdarkMode={setdarkMode}/>
 
         <Outlet />
