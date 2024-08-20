@@ -91,11 +91,12 @@ export const Home = () => {
               Tested, debugged, and optimized code for performance and reliability. <br />
               </p>
               </div>
+
             </div>
             <div className="bg-blue-500 w-[45px] h-[45px] relative top-[100px] left-[640px]"></div>
             <div className="font-bold text-[35px] flex justify-center z-0  ">Education</div>
-            <div className="flex flex-col justify-center items-center">
-              <p>
+            <div className="flex justify-center items-center">
+              <p className="space-y- text-wrap">
               University of Rizal System (URS) <br />
               Bachelor of Science in Information Technology <br />
               2020 - 2024
@@ -107,12 +108,8 @@ export const Home = () => {
       {/* //Projects */}
       <section className="flex justify-center items-center p-0 m-0 w-full bg-light-blue-300">
         <div className="flex justify-center items-center h-[800px] w-full">
-        <div class="relative flex place-items-center w-full max-w-lg h-64 bg-white">
-  
-    <div class="absolute inset-100 bg-gray-500 w-[500px] h-[50px] z-20"></div>
-   
-    <div class="absolute inset-1 bg-yellow-500 z-10" ></div>
-  </div>
+
+          Here is the Projects section
           
         </div>
       </section>
