@@ -52,7 +52,8 @@ export const Home = () => {
       </section>
       {/* //about me */}
       <section className="flex justify-center items-center p-0 m-0 w-full">
-        <div className="flex justify-center items-center h-[800px] w-full bg-background1">
+        <div className="flex flex-row justify-center items-center h-[800px] w-full bg-background1 space-x-10">
+        <div className="h-[400px] w-[500px] bg-yellow-500 flex justify-center items-center">image</div>
           <div className="flex flex-col justify-center items-center bg-white h-[500px] w-[900px] rounded-lg">
             <div className="flex justify-center items-center">
               <div className="bg-blue-500 w-[45px] h-[45px] static top-[1175px] right-[640px]"></div>
