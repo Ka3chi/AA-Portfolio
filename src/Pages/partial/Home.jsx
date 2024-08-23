@@ -1,26 +1,28 @@
 import React from "react"; 
-import picture from "../../Assets/Aldrin-picture.png";
 import { Button } from "@material-tailwind/react";
 import { FaLinkedin, FaGithub, FaFacebook  } from "react-icons/fa";
 import Typewriter from 'typewriter-effect';
 import { Contactme } from "./Contactme";
+import picture from "../../Assets/Aldrin-picture.png";
+import Aboutme from "../../Assets/aboutme.png"
 
 export const Home = () => {
   return (
     <main className="flex flex-col justify-center items-center p-0 m-0">
+
       {/* //Hero section */}
       <section className="flex h-[800px] w-full justify-center items-center">
-        <div className="flex flex-row items-center justify-start h-[500px]">
-          <div className="flex flex-col space-y-5 justify-center items-center">
-            <a className="btn-button flex w-[50px] h-[50px] justify-center items-center rounded-3xl" href="https://www.linkedin.com/in/aldrin-john-almoradie-41a50a2a8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <div className="flex lg:flex-row md:flex-col sm:flex-col items-center justify-center h-[500px]">
+          <div className="flex lg:flex-col md:flex-row justify-center items-center space-y-5">
+            <a className="btn-button flex w-[50px] h-[50px] justify-center items-center rounded-3xl " href="https://www.linkedin.com/in/aldrin-john-almoradie-41a50a2a8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin className="h-[30px] w-[30px]" />
             </a>
-            <a className="btn-button flex w-[50px] h-[50px] justify-center items-center rounded-3xl" href="https://www.facebook.com/AldrinJohnAlmoradie/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a className="btn-button flex w-[50px] h-[50px] justify-center items-center rounded-3xl " href="https://www.facebook.com/AldrinJohnAlmoradie/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaFacebook className="h-[30px] w-[30px]"/>
             </a>
-            <a className="btn-button flex w-[50px] h-[50px] justify-center items-center rounded-3xl" href="https://github.com/Ka3chi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a className="btn-button flex w-[50px] h-[50px] justify-center items-center rounded-3xl " href="https://github.com/Ka3chi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaGithub className="h-[30px] w-[30px]"/>
-            </a>
+            </a> 
           </div>
           <div>
             <img src={picture} alt="profile" className="h-[400px] w-[390px]" />
@@ -50,26 +52,29 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
       {/* //about me */}
       <section className="flex justify-center items-center p-0 m-0 w-full">
-        <div className="flex flex-row justify-center items-center h-[800px] w-full bg-background1 space-x-10">
-        <div className="h-[400px] w-[500px] bg-yellow-500 flex justify-center items-center">image</div>
-          <div className="flex flex-col justify-center items-center bg-white h-[500px] w-[900px] rounded-lg">
+        <div className="flex flex-row relative justify-center items-center h-[800px] w-full bg-gray-100 space-x-10">
+        <div className="h-[400px] w-[500px] flex justify-center items-center">
+          <img src={ Aboutme } alt="aboutme" className=" rounded-lg"/>
+        </div>
+          <div className="flex flex-col justify-center items-center h-[500px] w-[900px] rounded-lg">
             <div className="flex justify-center items-center">
-              <div className="bg-blue-500 w-[45px] h-[45px] static top-[1175px] right-[640px]"></div>
+              <div className="bg-blue-500 w-[40px] h-[40px] absolute top-[260px] right-[435px] rounded-md"></div>
               <p className="font-semibold text-[35px] flex justify-center z-0 ">About Me</p>
             </div>
             <div className="flex justify-center items-center w-[800px]">
-              <p className="text-wrap font-thin text-[20px]">As a web developer, I thrive on exploring new technologies and uncovering innovative ways to solve problems. My passion for continuous learning drives me to consistently seek out opportunities to enhance my skills and broaden my expertise. I am deeply committed to staying current with industry trends and advancements, which fuels my eagerness to embrace new challenges and expand my knowledge in this ever-evolving field. Whether it&apos;s diving into a new programming language, mastering a framework, or refining my existing skills, I am always enthusiastic about pushing my boundaries and growing both personally and professionally.</p>
+              <p className="text-wrap font-thin text-[20px]">As a Web developer, I thrive on exploring new technologies and uncovering innovative ways to solve problems. My passion for continuous learning drives me to consistently seek out opportunities to enhance my skills and broaden my expertise. I am deeply committed to staying current with industry trends and advancements, which fuels my eagerness to embrace new challenges and expand my knowledge in this ever-evolving field. Whether it&apos;s diving into a new programming language, mastering a framework, or refining my existing skills, I am always enthusiastic about pushing my boundaries and growing both personally and professionally.</p>
             </div>
           </div>
         </div>
-        {/* //Experience and Education */}
       </section>
-      {/* experience&education */}
+
+      {/* //Experience and Education */}
       <section className="grid justify-center items-center p-0 m-0 w-full">
         <div className="grid grid-col justify-center items-center h-[800px] w-full">
-          <div className=" relative flex flex-col justify-center bg-background1 h-[600px] w-[900px] rounded-lg">
+          <div className=" relative flex flex-col justify-center h-[600px] w-[900px] rounded-lg">
             <div className="bg-blue-500 w-[30px] h-[25px] absolute top-[15px] left-[355px] rounded-md"></div>
             <span className="font-semibold text-[35px] flex justify-center z-0 ">Experience</span>
             <div className="flex flex-col justify-center items-center space-y-5">
@@ -84,7 +89,7 @@ export const Home = () => {
               Duties and Responsibilities:
               </span>
               <div className="flex justify-center items-center text-wrap text-left">
-              <p className="space-y-5">
+              <p className="space-y-5 text-wrap">
               Designed, developed, and maintained responsive websites.<br />
               Created user-friendly interfaces with a focus on accessibility <br />
               Implemented server-side logic and database connections. <br />
