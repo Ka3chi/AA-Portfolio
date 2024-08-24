@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from "../../../Assets/logo-color.png"
 
 function NavItem({ label }) {
   return (
@@ -24,6 +25,9 @@ function NavList() {
       <NavItem label="Home" />
       <NavItem label="About Me" />
       <NavItem label="Projects" />
+      <Button color="gray" className="hidden lg:inline-block">
+            Contact Me
+      </Button>
     </ul>
   );
 }
@@ -41,14 +45,14 @@ export function Header({ darkMode, setdarkMode }) {
 
   return (
     <Navbar className=" shadow-none custom-navbar sticky top-0 right-0 z-10" fullWidth>
-      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+      <div className="container mx-auto flex lg:justify-between md:justify-between items-center text-blue-gray-900">
         <Typography
           as="a"
           href="#"  
           color="blue-gray"
-          className="mr-4 cursor-pointer text-lg font-bold flex flex-row"
+          className="mr-4 ms-2 cursor-pointer text-lg font-bold flex flex-row justify-center items-center"
         >
-          <img src="" alt="Logo" />
+          <img src={logo} alt="Logo" className="w-[50px] h-[50px]"/>
           Aldrin John Almoradie
         </Typography>
         <div className="hidden lg:block me-1">
@@ -56,9 +60,6 @@ export function Header({ darkMode, setdarkMode }) {
         </div>
         <Button onClick={() => setdarkMode(!darkMode)}  color="gray" className="ms-9">
           Click Me
-        </Button>
-        <Button color="gray" className="hidden lg:inline-block">
-          Contact Me
         </Button>
         <IconButton
           size="sm"
