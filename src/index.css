@@ -13,7 +13,7 @@ p{
   background-opacity: unset !important;
   border: none !important;
 }
-.page-container[data-darkmode="true"] {
+/* .page-container[data-darkmode="true"] {
   background-color: black;
   color: white;
 }
@@ -34,4 +34,4 @@ p{
   display: flex;
   justify-items: center;
   align-items: center;
-}
+} */

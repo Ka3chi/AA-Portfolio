@@ -11,18 +11,24 @@ export const Home = () => {
     <main className="flex flex-col justify-center items-center p-0 m-0">
 
       {/* //Hero section */}
-      <section className="flex h-[800px] w-full justify-center items-center">
+      <section className="flex lg:h-[800px] md:h-[1000px] w-full justify-center items-center">
         <div className="flex lg:flex-row md:flex-col sm:flex-col items-center justify-center h-[500px]">
-          <div className="flex lg:flex-col md:flex-row justify-center items-center space-y-5">
-            <a className="btn-button flex w-[50px] h-[50px] justify-center items-center rounded-3xl " href="https://www.linkedin.com/in/aldrin-john-almoradie-41a50a2a8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <div className="flex lg:flex-col md:flex-row justify-center items-center lg:space-y-5 md:space-y-5">
+            <div className="flex justify-center items-center btn-button w-[50px] h-[50px] rounded-3xl">
+            <a className=" justify-center items-center rounded-3xl mx-5" href="https://www.linkedin.com/in/aldrin-john-almoradie-41a50a2a8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin className="h-[30px] w-[30px]" />
             </a>
-            <a className="btn-button flex w-[50px] h-[50px] justify-center items-center rounded-3xl " href="https://www.facebook.com/AldrinJohnAlmoradie/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            </div>
+            <div className="flex justify-center items-center btn-button w-[50px] h-[50px] rounded-3xl">
+            <a className="btn-button flex w-[50px] h-[50px] justify-center items-center rounded-3xl mx-5" href="https://www.facebook.com/AldrinJohnAlmoradie/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaFacebook className="h-[30px] w-[30px]"/>
             </a>
-            <a className="btn-button flex w-[50px] h-[50px] justify-center items-center rounded-3xl " href="https://github.com/Ka3chi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            </div>
+            <div className="flex justify-center items-center btn-button w-[50px] h-[50px] rounded-3xl">
+            <a className="btn-button flex w-[50px] h-[50px] justify-center items-center rounded-3xl mx-5" href="https://github.com/Ka3chi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaGithub className="h-[30px] w-[30px]"/>
-            </a> 
+            </a>
+            </div>
           </div>
           <div>
             <img src={picture} alt="profile" className="h-[400px] w-[390px]" />
@@ -56,15 +62,15 @@ export const Home = () => {
       {/* //about me */}
       <section className="flex justify-center items-center p-0 m-0 w-full">
         <div className="flex flex-row relative justify-center items-center h-[800px] w-full bg-gray-100 space-x-10">
-        <div className="h-[400px] w-[500px] flex justify-center items-center">
+        <div className=" h-[400px] w-[500px] flex justify-center items-center">
           <img src={ Aboutme } alt="aboutme" className=" rounded-lg"/>
         </div>
           <div className="flex flex-col justify-center items-center h-[500px] w-[900px] rounded-lg">
-            <div className="flex justify-center items-center">
-              <div className="bg-blue-500 w-[40px] h-[40px] absolute top-[260px] right-[435px] rounded-md"></div>
+            <div className="flex relative justify-center items-center">
+              <div className="bg-blue-500 w-[60px] h-[45px] absolute top-[4px] left-[100px] rounded-md"></div>
               <p className="font-semibold text-[35px] flex justify-center z-0 ">About Me</p>
             </div>
-            <div className="flex justify-center items-center w-[800px]">
+            <div className="flex justify-center items-center lg:w-[800px] md:w-[400px]">
               <p className="text-wrap font-thin text-[20px]">As a Web developer, I thrive on exploring new technologies and uncovering innovative ways to solve problems. My passion for continuous learning drives me to consistently seek out opportunities to enhance my skills and broaden my expertise. I am deeply committed to staying current with industry trends and advancements, which fuels my eagerness to embrace new challenges and expand my knowledge in this ever-evolving field. Whether it&apos;s diving into a new programming language, mastering a framework, or refining my existing skills, I am always enthusiastic about pushing my boundaries and growing both personally and professionally.</p>
             </div>
           </div>
@@ -111,6 +117,41 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* //Tech stacks */}
+      <section className="flex justify-center items-center p-0 m-0 w-full h-[800px] bg-gray-100">
+      <div
+    x-data="{}"
+    x-init="$nextTick(() => {
+        let ul = $refs.logos;
+        ul.insertAdjacentHTML('afterend', ul.outerHTML);
+        ul.nextSibling.setAttribute('aria-hidden', 'true');
+    })"
+    class="w-full justify-center items-center inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+>
+<ul class="flex items-center space-x-8 animate-infinite-scroll">
+        <li><img src="./facebook.svg" alt="Facebook" class="max-w-none" /></li>
+        <li><img src="./disney.svg" alt="Disney" class="max-w-none" /></li>
+        <li><img src="./airbnb.svg" alt="Airbnb" class="max-w-none" /></li>
+        <li><img src="./apple.svg" alt="Apple" class="max-w-none" /></li>
+        <li><img src="./spark.svg" alt="Spark" class="max-w-none" /></li>
+        <li><img src="./samsung.svg" alt="Samsung" class="max-w-none" /></li>
+        <li><img src="./quora.svg" alt="Quora" class="max-w-none" /></li>
+        <li><img src="./sass.svg" alt="Sass" class="max-w-none" /></li>
+    </ul>
+    <ul class="flex items-center space-x-8 animate-infinite-scroll absolute inset-0">
+        <li><img src="./facebook.svg" alt="Facebook" class="max-w-none" /></li>
+        <li><img src="./disney.svg" alt="Disney" class="max-w-none" /></li>
+        <li><img src="./airbnb.svg" alt="Airbnb" class="max-w-none" /></li>
+        <li><img src="./apple.svg" alt="Apple" class="max-w-none" /></li>
+        <li><img src="./spark.svg" alt="Spark" class="max-w-none" /></li>
+        <li><img src="./samsung.svg" alt="Samsung" class="max-w-none" /></li>
+        <li><img src="./quora.svg" alt="Quora" class="max-w-none" /></li>
+        <li><img src="./sass.svg" alt="Sass" class="max-w-none" /></li>
+    </ul>                
+</div>
+      </section>
+
       {/* //Projects */}
       <section className="flex justify-center items-center p-0 m-0 w-full bg-light-blue-300">
         <div className="flex justify-center items-center h-[800px] w-full">
@@ -119,6 +160,7 @@ export const Home = () => {
           
         </div>
       </section>
+
       {/* //Contact Me */}
       <section className="flex justify-center items-center p-0 m-0 w-full">
         <div className="flex justify-center items-center h-[800px] w-full">
